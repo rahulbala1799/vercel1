@@ -7,6 +7,7 @@ interface ProductPageProps {
   params: {
     slug: string;
   };
+  searchParams: Record<string, string | string[] | undefined>;
 }
 
 // Product data - in a real app, this would come from an API or database
