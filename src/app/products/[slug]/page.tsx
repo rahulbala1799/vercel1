@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 // Product data - in a real app, this would come from an API or database
 const productsData = [
@@ -95,8 +95,13 @@ const productsData = [
   }
 ];
 
-// Generate metadata for each product page
-export function generateMetadata({ params }: { params: { slug: string } }) {
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
+export function generateMetadata({ params }: Props): Metadata {
   const product = productsData.find(p => p.slug === params.slug);
   
   if (!product) {
@@ -112,8 +117,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-// Product detail page component
-export default function ProductPage({ params }: { params: { slug: string } }) {
+export default function ProductPage({ params }: Props) {
   const product = productsData.find(p => p.slug === params.slug);
   
   if (!product) {
