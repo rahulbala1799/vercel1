@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,18 +22,18 @@ export default function RootLayout({
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 items-center">
               <div className="flex-shrink-0">
-                <a href="/" className="text-2xl font-bold text-blue-600">
+                <Link href="/" className="text-2xl font-bold text-blue-600">
                   PackPro
-                </a>
+                </Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a href="#products" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  <Link href="#products" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                     Products
-                  </a>
-                  <a href="#contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  </Link>
+                  <Link href="#contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -61,9 +62,9 @@ export default function RootLayout({
               <div>
                 <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                 <ul className="space-y-2">
-                  <li><a href="#products" className="text-gray-400 hover:text-white">Products</a></li>
-                  <li><a href="#contact" className="text-gray-400 hover:text-white">Get Quote</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
+                  <li><Link href="#products" className="text-gray-400 hover:text-white">Products</Link></li>
+                  <li><Link href="#contact" className="text-gray-400 hover:text-white">Get Quote</Link></li>
+                  <li><Link href="#" className="text-gray-400 hover:text-white">About Us</Link></li>
                 </ul>
               </div>
             </div>

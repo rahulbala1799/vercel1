@@ -5,28 +5,28 @@ const products = [
   {
     title: 'Printed Pizza Boxes',
     description: 'Custom printed pizza boxes with your brand logo. Perfect for pizzerias and restaurants.',
-    imageUrl: '/images/pizza-box.jpg',
+    imageUrl: 'https://placehold.co/800x600/orange/white?text=Pizza+Boxes',
     price: 'From €0.85/box',
     slug: 'printed-pizza-boxes'
   },
   {
     title: 'Paper Bags',
     description: 'Eco-friendly paper bags with custom printing. Ideal for retail and food service.',
-    imageUrl: '/images/paper-bags.jpg',
+    imageUrl: 'https://placehold.co/800x600/brown/white?text=Paper+Bags',
     price: 'From €0.45/bag',
     slug: 'paper-bags'
   },
   {
     title: 'Bagasse Burger Boxes',
     description: 'Sustainable bagasse burger boxes with custom branding. Perfect for fast food restaurants.',
-    imageUrl: '/images/burger-boxes.jpg',
+    imageUrl: 'https://placehold.co/800x600/green/white?text=Burger+Boxes',
     price: 'From €0.65/box',
     slug: 'bagasse-burger-boxes'
   },
   {
     title: 'Premium Linen Napkins',
     description: 'High-quality linen feel napkins with custom printing. Add elegance to your dining experience.',
-    imageUrl: '/images/napkins.jpg',
+    imageUrl: 'https://placehold.co/800x600/gray/white?text=Linen+Napkins',
     price: 'From €0.15/napkin',
     slug: 'premium-linen-napkins'
   }
