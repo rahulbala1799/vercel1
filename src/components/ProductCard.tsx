@@ -12,15 +12,10 @@ interface ProductCardProps {
 export default function ProductCard({ title, description, imageUrl, price, slug }: ProductCardProps) {
   return (
     <div className="bg-white rounded-lg overflow-hidden group hover:shadow-lg transition-shadow duration-300 border border-gray-100">
-      <div className="relative h-56 w-full overflow-hidden">
-        <Image
-          src={imageUrl}
-          alt={title}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
-          priority={false}
-        />
+      <div className="relative h-56 w-full overflow-hidden bg-gray-200">
+        <div className="w-full h-full flex items-center justify-center text-gray-400">
+          {title}
+        </div>
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">{title}</h3>

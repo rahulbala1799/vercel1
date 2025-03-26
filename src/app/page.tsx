@@ -9,28 +9,28 @@ const products = [
   {
     title: 'Printed Pizza Boxes',
     description: 'Custom printed pizza boxes with your brand logo. Perfect for pizzerias and restaurants.',
-    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '/images/pizza-box.jpg',
     price: 'From €0.85/box',
     slug: 'printed-pizza-boxes'
   },
   {
     title: 'Paper Bags',
     description: 'Eco-friendly paper bags with custom printing. Ideal for retail and food service.',
-    imageUrl: 'https://images.unsplash.com/photo-1608541737042-87a14e3de3c0?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '/images/paper-bags.jpg',
     price: 'From €0.45/bag',
     slug: 'paper-bags'
   },
   {
     title: 'Bagasse Burger Boxes',
     description: 'Sustainable bagasse burger boxes with custom branding. Perfect for fast food restaurants.',
-    imageUrl: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '/images/burger-boxes.jpg',
     price: 'From €0.65/box',
     slug: 'bagasse-burger-boxes'
   },
   {
     title: 'Premium Linen Napkins',
     description: 'High-quality linen feel napkins with custom printing. Add elegance to your dining experience.',
-    imageUrl: 'https://images.unsplash.com/photo-1596459435843-a8e8958c5fb5?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '/images/napkins.jpg',
     price: 'From €0.15/napkin',
     slug: 'premium-linen-napkins'
   }

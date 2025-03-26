@@ -9,7 +9,7 @@ const productsData = [
     title: 'Printed Pizza Boxes',
     description: 'Custom printed pizza boxes with your brand logo. Perfect for pizzerias and restaurants.',
     longDescription: 'Our high-quality pizza boxes are made from food-grade cardboard with full-color custom printing options. Available in various sizes to fit all your pizza needs, these boxes maintain food temperature while showcasing your brand. The boxes are grease-resistant and stackable for easy transport.',
-    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '/images/pizza-box.jpg',
     price: 'From €0.85/box',
     slug: 'printed-pizza-boxes',
     features: [
@@ -31,7 +31,7 @@ const productsData = [
     title: 'Paper Bags',
     description: 'Eco-friendly paper bags with custom printing. Ideal for retail and food service.',
     longDescription: 'Our custom printed paper bags are perfect for retail stores, food services, and events. Made from sustainable paper sources, these bags are sturdy, eco-friendly, and can be fully customized with your branding. Available with different handle options and in multiple sizes.',
-    imageUrl: 'https://images.unsplash.com/photo-1608541737042-87a14e3de3c0?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '/images/paper-bags.jpg',
     price: 'From €0.45/bag',
     slug: 'paper-bags',
     features: [
@@ -53,7 +53,7 @@ const productsData = [
     title: 'Bagasse Burger Boxes',
     description: 'Sustainable bagasse burger boxes with custom branding. Perfect for fast food restaurants.',
     longDescription: 'Our bagasse burger boxes are an eco-friendly solution for fast-food restaurants looking to reduce their environmental impact. Made from sugarcane fiber (bagasse), these compostable containers are sturdy, grease-resistant, and perfect for holding burgers, sandwiches, and other foods.',
-    imageUrl: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '/images/burger-boxes.jpg',
     price: 'From €0.65/box',
     slug: 'bagasse-burger-boxes',
     features: [
@@ -75,7 +75,7 @@ const productsData = [
     title: 'Premium Linen Napkins',
     description: 'High-quality linen feel napkins with custom printing. Add elegance to your dining experience.',
     longDescription: 'Elevate your dining experience with our premium linen-feel napkins. These high-quality napkins look and feel like fabric but offer the convenience of disposables. Perfect for restaurants, cafes, events, and catering services seeking to make a sophisticated impression.',
-    imageUrl: 'https://images.unsplash.com/photo-1596459435843-a8e8958c5fb5?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '/images/napkins.jpg',
     price: 'From €0.15/napkin',
     slug: 'premium-linen-napkins',
     features: [
