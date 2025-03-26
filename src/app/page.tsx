@@ -90,7 +90,7 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-bold mb-4">Contact Information</h3>
                 <p className="mb-6 text-gray-600">
-                  Our team is here to help! Contact us and we'll get back to you as soon as possible.
+                  Our team is here to help! Contact us and we&apos;ll get back to you as soon as possible.
                 </p>
                 
                 <div className="space-y-4">

@@ -21,7 +21,7 @@ export default function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it - see what our customers have to say about their experience with PrintnPack.
+            Don&apos;t just take our word for it - see what our customers have to say about their experience with PrintnPack.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export default function Testimonials() {
               key={index} 
               className="bg-gray-50 p-8 rounded-lg relative shadow-sm"
             >
-              <div className="text-4xl text-blue-200 absolute top-4 left-4">"</div>
+              <div className="text-4xl text-blue-200 absolute top-4 left-4">&quot;</div>
               <p className="text-gray-700 mb-6 relative z-10 pt-6">
                 {testimonial.text}
               </p>
