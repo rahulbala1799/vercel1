@@ -3,33 +3,34 @@ import Benefits from '@/components/Benefits';
 import ProductCard from '@/components/ProductCard';
 import Testimonials from '@/components/Testimonials';
 import CallToAction from '@/components/CallToAction';
+import Link from 'next/link';
 
 const products = [
   {
     title: 'Printed Pizza Boxes',
     description: 'Custom printed pizza boxes with your brand logo. Perfect for pizzerias and restaurants.',
-    imageUrl: 'https://placehold.co/600x400/orange/white?text=Pizza+Boxes',
+    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=600&auto=format&fit=crop',
     price: 'From €0.85/box',
     slug: 'printed-pizza-boxes'
   },
   {
     title: 'Paper Bags',
     description: 'Eco-friendly paper bags with custom printing. Ideal for retail and food service.',
-    imageUrl: 'https://placehold.co/600x400/brown/white?text=Paper+Bags',
+    imageUrl: 'https://images.unsplash.com/photo-1608541737042-87a14e3de3c0?q=80&w=600&auto=format&fit=crop',
     price: 'From €0.45/bag',
     slug: 'paper-bags'
   },
   {
     title: 'Bagasse Burger Boxes',
     description: 'Sustainable bagasse burger boxes with custom branding. Perfect for fast food restaurants.',
-    imageUrl: 'https://placehold.co/600x400/green/white?text=Burger+Boxes',
+    imageUrl: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=600&auto=format&fit=crop',
     price: 'From €0.65/box',
     slug: 'bagasse-burger-boxes'
   },
   {
     title: 'Premium Linen Napkins',
     description: 'High-quality linen feel napkins with custom printing. Add elegance to your dining experience.',
-    imageUrl: 'https://placehold.co/600x400/gray/white?text=Linen+Napkins',
+    imageUrl: 'https://images.unsplash.com/photo-1596459435843-a8e8958c5fb5?q=80&w=600&auto=format&fit=crop',
     price: 'From €0.15/napkin',
     slug: 'premium-linen-napkins'
   }
@@ -58,7 +59,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-16">
-            <a 
+            <Link 
               href="/products" 
               className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800"
             >
@@ -66,7 +67,7 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
