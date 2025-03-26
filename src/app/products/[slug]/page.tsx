@@ -3,13 +3,6 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 
-interface ProductPageProps {
-  params: {
-    slug: string;
-  };
-  searchParams: Record<string, string | string[] | undefined>;
-}
-
 // Product data - in a real app, this would come from an API or database
 const productsData = [
   {
@@ -102,7 +95,11 @@ const productsData = [
   }
 ];
 
-export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: { slug: string } 
+}): Promise<Metadata> {
   const product = productsData.find(p => p.slug === params.slug);
   
   if (!product) {
@@ -118,7 +115,11 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   };
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
+export default function ProductPage({ 
+  params 
+}: { 
+  params: { slug: string } 
+}) {
   const product = productsData.find(p => p.slug === params.slug);
   
   if (!product) {
