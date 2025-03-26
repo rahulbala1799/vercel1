@@ -6,6 +6,15 @@ const nextConfig = {
     // Disabling ESLint during build as it's causing deployment issues
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ['images.unsplash.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig; 

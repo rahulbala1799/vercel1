@@ -95,11 +95,8 @@ const productsData = [
   }
 ];
 
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: { slug: string } 
-}): Promise<Metadata> {
+// Generate metadata for each product page
+export function generateMetadata({ params }: { params: { slug: string } }) {
   const product = productsData.find(p => p.slug === params.slug);
   
   if (!product) {
@@ -115,11 +112,8 @@ export async function generateMetadata({
   };
 }
 
-export default function ProductPage({ 
-  params 
-}: { 
-  params: { slug: string } 
-}) {
+// Product detail page component
+export default function ProductPage({ params }: { params: { slug: string } }) {
   const product = productsData.find(p => p.slug === params.slug);
   
   if (!product) {
